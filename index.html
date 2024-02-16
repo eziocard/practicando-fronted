@@ -4,8 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>masterdocs game</title>
+    <link rel="stylesheet" href="./css/reset.css"><!--primero se debe poner la referencia al fichero reset-->
+    <link rel="stylesheet" href="./css/style.css"><!-- y luego se referencia el fichero que contendra los estilos-->
+
 </head>
 <body>
-    
+    <!--cabecera-->
+    <header>
+        <img src="./img/logo.png" alt="logo de mastermind">
+    </header>
+    <!--formulario-->
+    <main>
+        <form action="#">
+            <div class="itemform">
+                <label for="nick">Enter your name:</label>
+                <input type="text" id="nick" name="user_name" />
+            </div>  
+
+            <div>
+                <label for="size">Tamaño del juego</label>
+                <select name="size" id="size">
+                    <option value="">--Porfavor elige un tamaño--</option>
+                    <option value="1">4x4</option>
+                    <option value="1">5x5</option>
+                    <option value="1">6x6</option>
+                 </select>
+                
+            </div> 
+            <div class="itemform">
+                <input type="submit" value="Send Request" />
+            </div> 
+          </form>
+    </main>
+    <!--pie de pagina-->
+    <footer>
+        <p>Curso de fronted html js css</p>
+    </footer>
 </body>
 </html>
